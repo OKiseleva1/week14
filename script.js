@@ -41,7 +41,12 @@ buttonPlus.onclick=function(){
         buttonDel.onclick=function(){
             let g=+inputCalc.value;
             let h=+inputCalc2.value;
-            inputResult.value=g/h;
+            if (h==0){
+                inputResult.value=('На 0 делить нельзя');
+            }
+            else{
+            inputResult.value=(g/h);
+        }
             }
 
 
